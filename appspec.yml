@@ -4,3 +4,23 @@ os: linux
 files:
   - source: /
     destination: /opt/hello
+
+permissions:
+  - object: /opt/hello
+    pattern: "**"
+    owner: root
+    group: root
+    mode: 555
+    type:
+      - file
+
+hooks:
+  ApplicationStop:
+    - location: /opt/hello/stop.sh
+      timeout: 20
+      runas: root
+  ApplicationStart:
+    - location: /opt/hello/start.sh
+      timeout: 20
+      runas: root
+
