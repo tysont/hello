@@ -9,3 +9,5 @@ artifacts:
   files:
     - appspec.yml
     - hello
+    - start.sh
+    - stop.sh
