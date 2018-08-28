@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.0
 os: linux 
 
 files:
@@ -13,4 +13,5 @@ permissions:
     mode: 555
     type:
       - file
+
 
