@@ -1,4 +1,4 @@
-version: 0.0
+version: 0.1
 os: linux 
 
 files:
@@ -16,11 +16,11 @@ permissions:
 
 hooks:
   ApplicationStop:
-    - location: /opt/hello/stop.sh
+    - location: /opt/hello-scripts/stop.sh
       timeout: 20
       runas: root
   ApplicationStart:
-    - location: /opt/hello/start.sh
+    - location: /opt/hello-scripts/start.sh
       timeout: 20
       runas: root
 
