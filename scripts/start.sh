@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/hello/hello &
+/opt/hello/hello &>/dev/null
