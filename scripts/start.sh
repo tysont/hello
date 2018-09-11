@@ -1,2 +1,4 @@
 #!/bin/bash
-/opt/hello/hello &>/dev/null || echo "started"
+exec 2> /dev/tty
+/opt/hello/hello
+exit 0

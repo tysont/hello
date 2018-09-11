@@ -1,2 +1,4 @@
 #!/bin/bash
-killall hello || echo "stopped"
+exec 2> /dev/tty
+killall hello
+exit 0
