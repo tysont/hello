@@ -1,2 +1,2 @@
 #!/bin/bash
-killall hello 2>&1 || true
+pgrep hello | xargs kill 2>&1

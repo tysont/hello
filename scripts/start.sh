@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/hello/hello 2>&1 || true
+/opt/hello/hello 2>&1
