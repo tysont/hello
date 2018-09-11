@@ -9,4 +9,4 @@ clean:
 
 build:
 	mkdir -p bin
-	GOOS=linux GOARCH=amd64 go build -o "bin/hello"
+	GOOS=linux GOARCH=amd64 go build -o bin/hello

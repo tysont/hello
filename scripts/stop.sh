@@ -1,2 +1,2 @@
 #!/bin/bash
-killall hello
+killall hello || echo "stopped"
