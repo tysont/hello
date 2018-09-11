@@ -8,6 +8,6 @@ phases:
 artifacts:
   files:
     - appspec.yml
-    - hello
-    - start.sh
-    - stop.sh
+    - bin/*
+    - scripts/*
+  discard-paths: no
