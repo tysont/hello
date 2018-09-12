@@ -1,2 +1,4 @@
 #!/bin/bash
-/opt/hello/hello 2>&1 &
+set -e
+
+/opt/hello/hello >> /var/log/hello.log 2>&1 &

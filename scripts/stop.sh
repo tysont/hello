@@ -1,2 +1,3 @@
 #!/bin/bash
-killall hello || true
+
+killall 'hello' || true
