@@ -3,11 +3,11 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - make clean
+      - make prepare
 
   build:
     commands:
-      - make build package
+      - make clean build package
 
   post_build:
     commands:
