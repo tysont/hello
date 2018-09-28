@@ -1,9 +1,17 @@
 version: 0.2
 
 phases:
+  pre_build:
+    commands:
+      - make clean
+
   build:
     commands:
-      - make all
+      - make build package
+
+  post_build:
+    commands:
+      - make publish
 
 artifacts:
   files:
