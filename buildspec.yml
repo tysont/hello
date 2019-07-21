@@ -4,6 +4,10 @@ phases:
   pre_build:
     commands:
       - service docker start
+      - make --version
+      - go version
+      - aws --version
+
 
   build:
     commands:
