@@ -1,16 +1,6 @@
 version: 0.2
 
 phases:
-  pre_build:
-    commands:
-      - apt-get -q update -y
-      - apt-get -q install -y build-essential curl zip
-
-      - curl https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz | tar -xz -C /usr/local
-      - GOROOT=/usr/local/go
-      - GOPATH=/opt/go
-      - PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-      - go version
 
   build:
     commands:
