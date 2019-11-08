@@ -19,6 +19,7 @@ package:
 
 run:
 	docker run -i -t --rm --publish 8080:8080 --name=$(APP_NAME) $(APP_NAME)
+	
 
 CMD_REPOLOGIN := "eval $$\( aws ecr get-login --region $(AWS_REGION) --no-include-email \)"
 publish:
